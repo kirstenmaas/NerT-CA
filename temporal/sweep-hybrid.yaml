@@ -1,0 +1,26 @@
+method: grid
+metric:
+  goal: maximize
+  name: dice_score
+parameters:
+  data_name:
+    values: ['MAGIX-LCA']
+  pos_enc:
+    values: ['free_windowed']
+  data_step_size:
+    values: [60]
+  data_numb_angles:
+    values: [9]
+  tv_weight_init:
+    values: [1e-3]
+  lr_sparse:
+    values: [5e-2]
+  occl_weight_start:
+    values: [1e-8]
+  
+
+early_terminate:
+  type: hyperband
+  min_iter: 15000
+  eta: 2
+  strict: true

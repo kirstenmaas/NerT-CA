@@ -1,0 +1,89 @@
+wandb_sweep_yaml = 'temporal/sweep-hybrid.yaml'
+use_wandb = True
+
+data_name = 'XCAT-V1'
+x_ray_type = 'rotation'
+data_size = 200
+
+data_limited_range = 60
+data_step_size = 120
+data_numb_angles = 4
+data_time_range_start = 0
+data_time_range_end = 10
+
+use_experiment_name = False
+experiment_name = 'one-frame-resp'
+
+debug_mode = False
+only_prepare_data = False
+visualize_geometry = False
+export_mesh = True
+log_dir = ''
+
+depth_samples_min = 256
+depth_samples_max = 256
+depth_samples_increase_every = -1
+
+n_iters = 30000
+display_every = 1000
+save_every = 2500
+batch_size_start = 10240
+batch_size_decay_steps = 15000
+batch_size_end = 10240
+
+img_sample_size = 2048
+log_every = 1
+
+lr = 0.02
+lr_end_factor = 0.1
+lr_decay_steps = 30000
+
+model_name = TensorVM
+N_voxel_init = 48
+N_voxel_final = 48
+bb_thresh = 0.5
+N_components = 3
+density_shift = -10
+upsamp_list = "[]"
+update_density_list = "[]"
+
+l1_weight_init = 0
+l1_weight_final = 0
+
+tv_weight_init = 1e-2
+tv_weight_final = 1e-2
+
+mlp_num_channels = 128
+mlp_num_early_layers = 2
+mlp_num_late_layers = 2
+mlp_num_time_dim = 8
+use_time_latents = True
+per_layer_input = False
+
+increase_feature_cap_every = 1
+increase_frequency_cap_until = 5000
+density_clip = 100
+max_freq = 1
+
+lr_sparse = 0.1
+lr_sparse_end_factor = 0.1
+lr_sparse_decay_steps = 30000
+
+pos_enc = 'free_windowed'
+pos_enc_basis = 10
+pos_enc_window_start = 0
+pos_enc_window_decay_steps = 15000
+model_delay = 1500
+
+occl_reg_perc = 0.2
+occl_weight_start = 1e-8
+occl_weight_end = 1e-8
+
+entro_weight_start = 0
+entro_weight_end = 0
+
+param_delay = 0
+hyperparam_decay_steps = 15000
+
+var_sample_perc = 0
+var_sample_thre = 3
