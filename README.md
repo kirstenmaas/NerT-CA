@@ -9,7 +9,7 @@ and intra-scan motion. State-of-the-art reconstruction approaches rely on time-c
 qualitatively on representative 4D phantom datasets.
 
 ## Method Overview
-![Overview of the method](https://github.com/kirstenmaas/NerT-CA/blob/main/imgs/overview.png)
+![Overview of the method](https://github.com/kirstenmaas/NerT-CA/blob/main/imgs/overview.jpg)
 
 ## Repository
 This repository contains the implementation of the PyTorch models. The code for preprocessing the datasets can be found at the repository of [NeRF-CA](https://github.com/kirstenmaas/NeRF-CA). 
